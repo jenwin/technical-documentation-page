@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="javascript documentation for beginners">
+  <meta name="keywords" content="javascript documentation, javascript, beginners, documentation, technical documentation project">
+  <meta name="author" content="Jennifer Nguyen">
+  <title>JavaScript Documentation</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+<!-- navigation -->
+<nav id="navbar">
+  <header class="title">JavaScript Documentation</header>
+    <div class="links-wrapper">
+      <a class="nav-link" href="#introduction" id="introduction-scroll">Introduction</a>
+      <a class="nav-link" href="#hello_world" id="hello-world-scroll">Hello World</a>
+      <a class="nav-link" href="#variables" id="variables-scroll">Variables</a>
+      <a class="nav-link" href="#declaring_variables" id="declaring-variables-scroll">Declaring Variables</a>
+      <a class="nav-link" href="#variable_scope" id="variable-scope-scroll">Variable Scope</a>
+      <a class="nav-link" href="#global_variables" id="global-variables-scroll">Global Variables</a>
+      <a class="nav-link" href="#constants" id="constants-scroll">Constants</a>
+      <a class="nav-link" href="#data_types" id="data-types-scroll">Data Types</a>
+      <a class="nav-link" href="#reference" id="reference-scroll">Reference</a>
+    </div>
+</nav>
+
+<!-- main section with topics -->
+<main id="main-doc">
+  <!-- introduction -->
+  <section class="main-section" id="introduction" tabindex="0" data-name="introduction-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Introduction</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+
+      <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+
+      <p>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</p>
+
+      <p>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</p>
+    </div>
+  </section>
+
+  <!-- hello world -->
+  <section class="main-section" id="hello_world" tabindex="0" data-name="hello-world-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Hello World</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      function greetMe(yourName) {
+        alert("Hello " + yourName);
+      }
+      greetMe("World");
+      </code>
+    </div>
+
+    <div class="para">
+      <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+    </div>
+  </section>
+
+  <!-- variables -->
+  <section class="main-section" id="variables" tabindex="0" data-name="variables-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Variables</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+
+      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+
+      <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name..</p>
+    </div>
+  </section>
+
+  <!-- declaring variables -->
+  <section class="main-section" id="declaring_variables" tabindex="0" data-name="declaring-variables-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Declaring Variables</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>You can declare a variable in three ways:</p>
+
+      <p>With the keyword var. For example,</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      var x = 42.
+      </code>
+    </div>
+
+    <div class="para">
+      <p>This syntax can be used to declare both local and global variables.</p>
+
+      <p>By simply assigning it a value. For example,<p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      x = 42.
+      </code>
+    </div>
+
+    <div class="para">
+      <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+
+      <p>With the keyword let. For example,</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      let y = 13.
+      </code>
+    </div>
+  </section>
+
+  <!-- variable scope -->
+  <section class="main-section" id="variable_scope" tabindex="0" data-name="variable-scope-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Variable Scope</h2>
+    </header>
+
+   <div class="line"></div>
+
+   <div class="para">
+     <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+
+     <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+   </div>
+
+   <div class="code-wrapper">
+     <code class="code-container">
+      if (true) {
+        var x = 5;
+      }
+      console.log(x);  // 5
+    </code>
+  </div>
+
+  <div class="para">
+    <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.<p>
+  </div>
+
+  <div class="code-wrapper">
+    <code class="code-container">
+    if (true) {
+    let y = 5;
+    }
+    console.log(y);
+    // ReferenceError: y is not defined
+    </code>
+  </div>
+  </section>
+
+  <!-- global variables -->
+  <section class="main-section" id="global_variables" tabindex="0" data-name="global-variables-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Global Variables</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+
+      <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+    </div>
+  </section>
+
+  <!-- constants -->
+  <section class="main-section" id="constants" tabindex="0" data-name="constants-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Constants</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      const PI = 3.14;
+      </code>
+    </div>
+
+    <div class="para">
+      <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+
+      <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+
+      <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      // THIS WILL CAUSE AN ERROR
+      function f() {};
+      const f = 5;
+      // THIS WILL CAUSE AN ERROR ALSO
+      function f() {
+      const g = 5;
+      var g;
+      //statements
+      }
+      </code>
+    </div>
+
+    <div class="para">
+      <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+    </div>
+
+    <div class="code-wrapper">
+      <code class="code-container">
+      const MY_OBJECT = {"key": "value"};
+      MY_OBJECT.key = "otherValue";
+      </code>
+    </div>
+  </section>
+
+  <!-- data types -->
+  <section class="main-section" id="data_types" tabindex="0" data-name="data-types-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Data Types</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>The latest ECMAScript standard defines seven data types:</p>
+
+      <p>Six data types that are primitives:</p>
+    </div>
+
+    <ul class="datatypes-list">
+      <li>Boolean. true and false.</li>
+      <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+      <li>undefined. A top-level property whose value is undefined.</li>
+      <li>Number. 42 or 3.14159.</li>
+      <li>String. "Howdy"</li>
+      <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+      <li>and Object</li>
+    </ul>
+
+    <div class="para">
+      <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+    </div>
+  </section>
+
+  <!-- reference -->
+  <section class="main-section" id="reference" tabindex="0" data-name="reference-scroll">
+    <header class="subtitle">
+      <i class="fas fa-sort-up" aria-hidden="true"></i>
+        <h2 class="subtitle-name">Reference</h2>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="para">
+      <p>All the documentation is taken from
+        <a class="reference-link" href="https://developer.mozilla.org/en-US/">MDN</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- author -->
+  <p class="copyright" tabindex="0">© Jennifer Nguyen</p>
+
+   <!-- back to top button -->
+  <button class="arrow-btn" aria-label="back to top navigation">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

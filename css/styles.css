@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Heebo', sans-serif;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+}
+
+/**************nav******************/
+#navbar,
+.links-wrapper {
+  background: #a09ec2;
+  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+#navbar {
+  height: 100%;
+  position: fixed;
+  width: 22rem;
+}
+
+.links-wrapper::-webkit-scrollbar {
+  background: #a09ec2;
+}
+
+.nav-link {
+  padding: 2.2rem 0 0 2.5rem;
+}
+
+.title,
+.nav-link:hover {
+  color: #fff;
+}
+
+.title {
+  background: #694489;
+  letter-spacing: 0.13rem;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+.fa-sort-up {
+  font-size: 1.1rem;
+  position: relative;
+  right: 0.5rem;
+  top: 0.03rem;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.line {
+  background: #8342c9;
+  height: 0.09rem;
+  margin: 0 1rem;
+}
+
+/***************main*****************/
+#main-doc {
+  margin-left: 23rem;
+  padding-right: 0.9rem;
+  position: absolute;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.subtitle-name {
+  font-size: 1rem;
+  display: inline;
+}
+
+.para {
+  padding: 0 1rem;
+}
+
+.code-wrapper {
+  background: #f2f4f7;
+}
+
+.code-container {
+  white-space: pre;
+}
+
+.reference-link:hover {
+  text-decoration: underline;
+}
+
+.arrow-btn {
+  background: rgba(250, 250, 210, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  bottom: 0;
+  display: block;
+  height: 3rem;
+  margin: 0 0.5rem 0.5rem 0;
+  position: fixed;
+  right: 0;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease linear;
+  width: 3rem;
+}
+
+.fa-arrow-up {
+  margin-top: 0.01rem;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  margin-left: 0.9rem;
+  padding-top: 2rem;
+}
+
+/***************nav******************/
+/***************main*****************/
+body,
+html,
+.datatypes-list {
+  margin: 0;
+}
+
+body,
+html,
+#main-doc {
+  min-width: 300px;
+}
+
+.nav-link,
+.reference-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.title,
+.copyright {
+  font-weight: bold;
+}
+
+.nav-link,
+.subtitle {
+  letter-spacing: 0.02rem;
+}
+
+.subtitle,
+.code-wrapper {
+  border-radius: 0.4rem;
+}

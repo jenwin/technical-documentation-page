@@ -1,0 +1,122 @@
+/**************tablets***************/
+/**************portrait**************/
+@media screen
+and ( min-width: 1024px )
+and ( max-width: 1400px )
+and ( orientation: portrait ) {
+/**************nav******************/
+#navbar {
+  width: 19rem;
+}
+
+#main-doc {
+  margin-left: 20rem;
+}
+}
+
+@media screen
+and ( min-width: 768px )
+and ( max-width: 1023px )
+and ( orientation: portrait ) {
+/**************nav******************/
+#navbar {
+  width: 13.5rem;
+}
+
+#main-doc {
+  margin-left: 14.4rem;
+}
+}
+
+/***************landscape***********/
+@media screen
+and ( min-width: 1024px )
+and ( max-width: 1365px )
+and ( orientation: landscape ) {
+/**************nav******************/
+#navbar {
+  width: 16rem;
+}
+
+#main-doc {
+  margin-left: 16.9rem;
+}
+}
+
+/***************mobile**************/
+/***************portrait************/
+@media screen
+and ( max-width: 767px )
+and ( orientation: portrait ) {
+/**************nav******************/
+#navbar {
+  height: 240px;
+  position: static;
+}
+
+.links-wrapper {
+  overflow-y: scroll;
+}
+
+.nav-link {
+  padding: 1rem 0 0 1.2rem;
+}
+
+.nav-link:last-of-type {
+  padding-bottom: 1rem;
+}
+
+#navbar,
+#main-doc {
+  margin-left: 0;
+  width: 100%;
+}
+
+#main-doc {
+  padding: 0 1rem 1rem 1rem;
+}
+
+/***************main*****************/
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  padding-left: 1.8rem;
+}
+}
+
+@media screen
+and ( max-width: 320px )
+and ( orientation: portrait ) {
+.code-container {
+  position: relative;
+  left: -1.5rem;
+}
+}
+
+/***************mobile***************/
+/***************landscape************/
+@media screen
+and ( min-width: 300px )
+and ( max-width: 1023px )
+and ( orientation: landscape ) {
+/**************nav******************/
+#navbar {
+  overflow: auto;
+  width: 12rem;
+}
+
+#main-doc {
+  margin-left: 12.7rem;
+  padding-right: 0.7rem;
+}
+
+.nav-link {
+  padding: 1.2rem 0 0 1.2rem;
+}
+
+.nav-link:last-of-type {
+  padding-bottom: 1.2rem;
+}
+}
