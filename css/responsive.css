@@ -5,6 +5,7 @@ and ( min-width: 1024px )
 and ( max-width: 1400px )
 and ( orientation: portrait ) {
 /**************nav******************/
+/**************main*****************/
 #navbar {
   width: 19rem;
 }
@@ -19,8 +20,13 @@ and ( min-width: 768px )
 and ( max-width: 1023px )
 and ( orientation: portrait ) {
 /**************nav******************/
+/**************main*****************/
 #navbar {
   width: 13.5rem;
+}
+
+.nav-link {
+  padding: 2.2rem 0 0 2rem;
 }
 
 #main-doc {
@@ -34,8 +40,13 @@ and ( min-width: 1024px )
 and ( max-width: 1365px )
 and ( orientation: landscape ) {
 /**************nav******************/
+/**************main*****************/
 #navbar {
   width: 16rem;
+}
+
+.nav-link {
+  padding: 2.2rem 0 0 2rem;
 }
 
 #main-doc {
@@ -59,7 +70,7 @@ and ( orientation: portrait ) {
 }
 
 .nav-link {
-  padding: 1rem 0 0 1.2rem;
+  padding: 1rem 0 0 2rem;
 }
 
 .nav-link:last-of-type {
@@ -72,17 +83,13 @@ and ( orientation: portrait ) {
   width: 100%;
 }
 
+/***************main*****************/
 #main-doc {
   padding: 0 1rem 1rem 1rem;
 }
 
-/***************main*****************/
 .title {
   text-align: center;
-}
-
-.subtitle {
-  padding-left: 1.8rem;
 }
 }
 
@@ -107,16 +114,17 @@ and ( orientation: landscape ) {
   width: 12rem;
 }
 
-#main-doc {
-  margin-left: 12.7rem;
-  padding-right: 0.7rem;
-}
-
 .nav-link {
   padding: 1.2rem 0 0 1.2rem;
 }
 
 .nav-link:last-of-type {
   padding-bottom: 1.2rem;
+}
+
+/***************main*****************/
+#main-doc {
+  margin-left: 12.7rem;
+  padding-right: 0.7rem;
 }
 }
